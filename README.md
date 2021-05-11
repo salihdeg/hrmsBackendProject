@@ -9,3 +9,7 @@ Human Resource Management System Backend Project
 > Veritabanı oluşturuldu ve bazı tablolar eklendi.
 > 
 > "positions" tablosu için nesne, manager ve controller eklendi.
+
+
+# Database Diagram
+![databasediagram](https://raw.githubusercontent.com/salihdeg/gitHubImages/master/hrmsBackendImages/hrmsDatabaseDiagram.png)
