@@ -11,5 +11,26 @@ Human Resource Management System Backend Project
 > "positions" tablosu için nesne, manager ve controller eklendi.
 
 
-# Database Diagram
+# Old Database Diagram
+## Not: Hatalarımı gözlemlemek adına bunu burada tutma kararı aldım
 ![databasediagram](https://raw.githubusercontent.com/salihdeg/gitHubImages/master/hrmsBackendImages/hrmsDatabaseDiagram.png)
+
+## 30.05.2021 Tarihli Commit'ler ile yapılan büyük eklemeler ve değişiklikler
+
+> 23.05.2021 tarihinden itibaren deneme, yanılma yolu ile bir çok değişikliği oldu
+> Şuanda göremediğiniz bir sürü değişiklik sebebi ile geliştirme süreci bitene kadar commit atmadım
+> 
+> Swagger Desteği eklendi
+> 
+> Database, isterler tekrar düşünülerek yeniden oluşturuldu.
+> 
+> User'dan inherit olan Workers, Employers ve System Employees tabloları için entity, dao, manager ve controller'lar eklendi.
+> 
+> Email ve Admin Verification için Tablolar, Sınıflar ve Manager'lar eklendi.
+> 
+> Workers ve Employers için istenen iş kuralları yazıldı.
+> 
+> Şuanda sadece Employers için bir register işlemi mevcut, ilerleyen commit'lerde Diğer User tipleri için de register-login işlemleri eklenecek.
+
+# Database Diagram - 05.30.2021
+![databasediagram](https://raw.githubusercontent.com/salihdeg/gitHubImages/master/hrmsBackendImages/hrmsDatabaseDiagram-30.05.2021.png)
