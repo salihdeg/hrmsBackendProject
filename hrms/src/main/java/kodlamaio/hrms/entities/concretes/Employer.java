@@ -45,4 +45,5 @@ public class Employer extends User {
 	@OneToOne(mappedBy = "employer")
 	private EmployerEmailVerification employerEmailVerification;
 	
+	
 }

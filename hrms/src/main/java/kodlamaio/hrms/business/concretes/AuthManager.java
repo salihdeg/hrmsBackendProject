@@ -8,7 +8,6 @@ import kodlamaio.hrms.business.abstracts.AuthService;
 import kodlamaio.hrms.business.abstracts.EmailService;
 import kodlamaio.hrms.business.abstracts.EmailVerificationService;
 import kodlamaio.hrms.business.abstracts.EmployerService;
-import kodlamaio.hrms.business.abstracts.WorkerService;
 import kodlamaio.hrms.core.utilities.results.ErrorResult;
 import kodlamaio.hrms.core.utilities.results.Result;
 import kodlamaio.hrms.core.utilities.results.SuccessResult;
@@ -21,21 +20,21 @@ import net.bytebuddy.utility.RandomString;
 @Service
 public class AuthManager implements AuthService{
 
-	@Autowired
 	private EmailVerificationService emailVerificationService;
-	
-	@Autowired
 	private EmployerService employerService;
-	
-	@Autowired
 	private AdminVerificationService adminVerificationService;
-	
-	@Autowired
 	private EmailService emailService;
 	
 	@Autowired
-	private WorkerService workerService;
-	
+	public AuthManager(EmailVerificationService emailVerificationService, EmployerService employerService,
+			AdminVerificationService adminVerificationService, EmailService emailService) {
+		super();
+		this.emailVerificationService = emailVerificationService;
+		this.employerService = employerService;
+		this.adminVerificationService = adminVerificationService;
+		this.emailService = emailService;
+	}
+
 	@Override
 	public Result employerRegister(Employer employer) {
 		

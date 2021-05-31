@@ -42,6 +42,7 @@ public class EmployerManager implements EmployerService{
 			return errors;
 		}
 		
+		
 		this.employerDao.save(employer);
 		return new SuccessResult("Employer Added");
 	}
