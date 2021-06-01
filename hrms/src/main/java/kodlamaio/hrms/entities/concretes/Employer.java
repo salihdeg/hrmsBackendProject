@@ -1,8 +1,11 @@
 package kodlamaio.hrms.entities.concretes;
 
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
@@ -23,7 +26,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Table(name = "employers")
 @PrimaryKeyJoinColumn(name = "user_id", referencedColumnName = "id")
-@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler", "adminVerification", "employerEmailVerification" })
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler", 
+	"adminVerification", "employerEmailVerification", "jobAdvertisements" })
 public class Employer extends User {
 
 	@Column(name = "company_name")
@@ -35,15 +39,17 @@ public class Employer extends User {
 	private String webSite;
 
 	@Column(name = "phone_number")
-	@Size(min = 10, max= 11)
+	@Size(min = 10, max = 11)
 	@NotBlank(message = "Phone Number Cannot Be Empty or Blank")
 	private String phoneNumber;
-	
+
 	@OneToOne(mappedBy = "employer")
 	private AdminVerification adminVerification;
-	
+
 	@OneToOne(mappedBy = "employer")
 	private EmployerEmailVerification employerEmailVerification;
-	
-	
+
+	@OneToMany(mappedBy = "employer")
+	private List<JobAdvertisement> jobAdvertisements;
+
 }
