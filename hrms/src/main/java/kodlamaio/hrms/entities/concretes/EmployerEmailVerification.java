@@ -3,7 +3,7 @@ package kodlamaio.hrms.entities.concretes;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
-
+import javax.persistence.Table;
 
 import kodlamaio.hrms.entities.abstracts.BaseEmailVerification;
 import lombok.AllArgsConstructor;
@@ -16,6 +16,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "email_verification")
 public class EmployerEmailVerification extends BaseEmailVerification {
 
 	@OneToOne()
