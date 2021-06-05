@@ -11,7 +11,7 @@ Human Resource Management System Backend Project
 > "positions" tablosu için nesne, manager ve controller eklendi.
 
 
-# Old Database Diagram
+# Old ER Diagram
 ## Not: Hatalarımı gözlemlemek adına bunu burada tutma kararı aldım
 ![databasediagram](https://raw.githubusercontent.com/salihdeg/gitHubImages/master/hrmsBackendImages/hrmsDatabaseDiagram.png)
 
@@ -32,7 +32,7 @@ Human Resource Management System Backend Project
 > 
 > Şuanda sadece Employers için bir register işlemi mevcut, ilerleyen commit'lerde Diğer User tipleri için de register-login işlemleri eklenecek.
 
-## Database Diagram - 30.05.2021
+## ER Diagram - 30.05.2021
 ![databasediagram](https://raw.githubusercontent.com/salihdeg/gitHubImages/master/hrmsBackendImages/hrmsDatabaseDiagram-30.05.2021.png)
 
 # 01.06.2021 Tarihli Değişiklikler
