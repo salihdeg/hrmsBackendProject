@@ -2,6 +2,7 @@ package kodlamaio.hrms.entities.concretes;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -32,24 +33,24 @@ public class Resume {
 	@JoinColumn(name = "worker_id", referencedColumnName = "user_id")
 	private Worker worker;
 	
-	@OneToMany(mappedBy = "resume")
+	@OneToMany(mappedBy = "resume", cascade = CascadeType.ALL)
 	private List<EducationInfo> educationInfos;
 	
-	@OneToMany(mappedBy = "resume")
+	@OneToMany(mappedBy = "resume", cascade = CascadeType.ALL)
 	private List<Experience> experiences;
 	
-	@OneToMany(mappedBy = "resume")
+	@OneToMany(mappedBy = "resume", cascade = CascadeType.ALL)
 	private List<KnownLanguage> knownLanguages;
 	
-	@OneToMany(mappedBy = "resume")
+	@OneToMany(mappedBy = "resume", cascade = CascadeType.ALL)
 	private List<WorkerSkill> workerSkills;
 	
-	@OneToMany(mappedBy = "resume")
+	@OneToMany(mappedBy = "resume", cascade = CascadeType.ALL)
 	private List<SocialAccount> socialAccounts;
 	
-	@OneToMany(mappedBy = "resume")
+	@OneToMany(mappedBy = "resume", cascade = CascadeType.ALL)
 	private List<WorkerPicture> workerPictures;
 	
-	@OneToMany(mappedBy = "resume")
+	@OneToMany(mappedBy = "resume", cascade = CascadeType.ALL)
 	private List<CoverLetter> coverLetters;
 }
