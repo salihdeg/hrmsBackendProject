@@ -10,6 +10,8 @@ public interface JobAdvertisementService {
 	
 	DataResult<List<JobAdvertisement>> getAll();
 	
+	DataResult<List<JobAdvertisement>> getRandomTen();
+	
 	Result add(JobAdvertisement jobAdvertisement);
 	
 	Result update(JobAdvertisement jobAdvertisement);

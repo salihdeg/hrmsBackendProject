@@ -33,6 +33,12 @@ public class JobAdvertisementController {
 		return ResponseEntity.ok(result);
 	}
 	
+	@GetMapping("/getrandomten")
+	public ResponseEntity<?> getRandomTen(){
+		var result = this.jobAdvertisementService.getRandomTen();
+		return ResponseEntity.ok(result);
+	}
+	
 	@PostMapping("/add")
 	public ResponseEntity<?> add(@Valid @RequestBody JobAdvertisement jobAdvertisement){
 		return ResponseEntity.ok(this.jobAdvertisementService.add(jobAdvertisement));
