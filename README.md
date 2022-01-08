@@ -2,7 +2,6 @@
 Human Resource Management System Backend Project
 
 ## Geliştirme Aşamasında!
-### kodlama.io isterleri doğrultusunda geliştirilmektedir!
 
 > Spring Boot ile geliştirilmeye başlandı.
 > 
@@ -11,14 +10,12 @@ Human Resource Management System Backend Project
 > "positions" tablosu için nesne, manager ve controller eklendi.
 
 
-# Old ER Diagram
-## Not: Hatalarımı gözlemlemek adına bunu burada tutma kararı aldım
+# ER Diagram
 ![databasediagram](https://raw.githubusercontent.com/salihdeg/gitHubImages/master/hrmsBackendImages/hrmsDatabaseDiagram.png)
 
 # 30.05.2021 Tarihli Commit'ler ile yapılan büyük eklemeler ve değişiklikler
 
 > 23.05.2021 tarihinden itibaren deneme, yanılma yolu ile bir çok değişikliği oldu
-> Şuanda göremediğiniz bir sürü değişiklik sebebi ile geliştirme süreci bitene kadar commit atmadım
 > 
 > Swagger Desteği eklendi
 > 
@@ -40,6 +37,5 @@ Human Resource Management System Backend Project
 > Job Advertisements için Entity, Repository, Service ve Controller oluşturuldu.
 
 ## Database Diagram - 01.06.2021
-### Diagram oluşturma PostgreSql Üzerinde henüz beta olduğu için çok hoş görselle oluşmuyor bu yüzden DbVisualizer kullandım, tavsiye ederim.
 ![databasediagram](https://raw.githubusercontent.com/salihdeg/gitHubImages/master/hrmsBackendImages/hrms_ERD_1Jun2021.png)
 
